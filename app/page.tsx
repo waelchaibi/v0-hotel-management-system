@@ -17,7 +17,7 @@ export default function Home() {
       <section className="relative h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=600&width=1200"
+            src="/hotel_main.jpg?height=600&width=1200"
             alt="Luxury hotel"
             fill
             className="object-cover"
@@ -164,7 +164,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold tracking-tight mb-8">Popular Destinations</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {[
-            { name: "Paris", image: "/placeholder.svg?height=300&width=400", hotels: 243 },
+            { name: "Paris", image: "/hotel_1.jpg?height=300&width=400", hotels: 243 },
             { name: "New York", image: "/placeholder.svg?height=300&width=400", hotels: 315 },
             { name: "Tokyo", image: "/placeholder.svg?height=300&width=400", hotels: 189 },
             { name: "London", image: "/placeholder.svg?height=300&width=400", hotels: 276 },
