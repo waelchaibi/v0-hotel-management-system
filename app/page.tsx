@@ -165,9 +165,9 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {[
             { name: "Paris", image: "/hotel_1.jpg?height=300&width=400", hotels: 243 },
-            { name: "New York", image: "/placeholder.svg?height=300&width=400", hotels: 315 },
-            { name: "Tokyo", image: "/placeholder.svg?height=300&width=400", hotels: 189 },
-            { name: "London", image: "/placeholder.svg?height=300&width=400", hotels: 276 },
+            { name: "New York", image: "/hotel_2.jpg?height=300&width=400", hotels: 315 },
+            { name: "Tokyo", image: "/hotel_3.jpg?height=300&width=400", hotels: 189 },
+            { name: "London", image: "/hotel_4.jpg?height=300&width=400", hotels: 276 },
           ].map((destination) => (
             <Link
               key={destination.name}
@@ -176,7 +176,7 @@ export default function Home() {
             >
               <div className="relative h-48">
                 <Image
-                  src={destination.image || "/placeholder.svg"}
+                  src={destination.image || "/hotel_5.jpg"}
                   alt={destination.name}
                   fill
                   className="object-cover transition-transform group-hover:scale-105"
@@ -200,21 +200,21 @@ export default function Home() {
             {
               name: "Grand Hotel Plaza",
               location: "Paris, France",
-              image: "/placeholder.svg?height=300&width=500",
+              image: "/hotel_6.jpg?height=300&width=500",
               price: 199,
               rating: 4.8,
             },
             {
               name: "Skyline Suites",
               location: "New York, USA",
-              image: "/placeholder.svg?height=300&width=500",
+              image: "/hotel_7.jpg?height=300&width=500",
               price: 249,
               rating: 4.7,
             },
             {
               name: "Imperial Resort",
               location: "Tokyo, Japan",
-              image: "/placeholder.svg?height=300&width=500",
+              image: "/hotel_8.jpg?height=300&width=500",
               price: 179,
               rating: 4.9,
             },
@@ -222,7 +222,7 @@ export default function Home() {
             <Link key={hotel.name} href={`/hotels/${hotel.name.toLowerCase().replace(/\s+/g, "-")}`} className="group">
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-48">
-                  <Image src={hotel.image || "/placeholder.svg"} alt={hotel.name} fill className="object-cover" />
+                  <Image src={hotel.image || "/hotel_9.jpg"} alt={hotel.name} fill className="object-cover" />
                 </div>
                 <CardContent className="p-4">
                   <div className="flex justify-between items-start">
@@ -267,7 +267,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="relative h-48 md:h-full">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/hotel_10.jpg?height=300&width=500"
                   alt="Early booking discount"
                   fill
                   className="object-cover"
@@ -283,7 +283,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="relative h-48 md:h-full">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/hotel_11.jpg?height=300&width=500"
                   alt="Weekend getaway"
                   fill
                   className="object-cover"

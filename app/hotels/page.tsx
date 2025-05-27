@@ -19,7 +19,7 @@ export default function HotelsPage() {
       id: 1,
       name: "Grand Hotel Plaza",
       location: "Paris, France",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/hotel_12.jpg?height=300&width=500",
       price: 199,
       rating: 4.8,
       reviews: 324,
@@ -30,7 +30,7 @@ export default function HotelsPage() {
       id: 2,
       name: "Skyline Suites",
       location: "New York, USA",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/hotel_13.jpg?height=300&width=500",
       price: 249,
       rating: 4.7,
       reviews: 256,
@@ -41,7 +41,7 @@ export default function HotelsPage() {
       id: 3,
       name: "Imperial Resort",
       location: "Tokyo, Japan",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/hotel_14.jpg?height=300&width=500",
       price: 179,
       rating: 4.9,
       reviews: 412,
@@ -52,7 +52,7 @@ export default function HotelsPage() {
       id: 4,
       name: "Seaside Retreat",
       location: "Bali, Indonesia",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/hotel_15.jpg?height=300&width=500",
       price: 159,
       rating: 4.6,
       reviews: 198,
@@ -63,7 +63,7 @@ export default function HotelsPage() {
       id: 5,
       name: "Mountain View Lodge",
       location: "Zurich, Switzerland",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/hotel_16.jpg?height=300&width=500",
       price: 219,
       rating: 4.8,
       reviews: 287,
@@ -74,7 +74,7 @@ export default function HotelsPage() {
       id: 6,
       name: "Urban Boutique Hotel",
       location: "Barcelona, Spain",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/hotel_17.jpg?height=300&width=500",
       price: 169,
       rating: 4.5,
       reviews: 176,
@@ -252,7 +252,7 @@ export default function HotelsPage() {
             {hotels.map((hotel) => (
               <Card key={hotel.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-48">
-                  <Image src={hotel.image || "/placeholder.svg"} alt={hotel.name} fill className="object-cover" />
+                  <Image src={hotel.image || "/hotel_18.jpg"} alt={hotel.name} fill className="object-cover" />
                   {hotel.tags.length > 0 && (
                     <div className="absolute top-2 left-2 flex gap-2">
                       {hotel.tags.map((tag) => (
